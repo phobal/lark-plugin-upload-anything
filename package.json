@@ -1,0 +1,45 @@
+{
+  "name": "lark-plugin-template",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@ant-design/icons": "5.3.6",
+    "@lark-base-open/js-sdk": "^0.4.0",
+    "@turf/buffer": "^7.1.0",
+    "@turf/helpers": "^7.1.0",
+    "antd": "^5.21.6",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
+    "gcoord": "^1.0.6",
+    "i18next": "^24.1.0",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.3.2",
+    "qs": "^6.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-i18next": "^15.2.0",
+    "store2": "^2.14.4",
+    "swr": "^2.2.5",
+    "tailwindcss": "^3.4.1",
+    "wkt": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0",
+    "postcss": "^8.4.35",
+    "typescript": "^5.3.3",
+    "vite": "^3.0.4",
+    "@vitejs/plugin-react": "^2.0.0"
+  }
+}

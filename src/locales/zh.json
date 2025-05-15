@@ -1,3 +1,73 @@
 {
-  "home.title": "Lark 插件模板"
+  "home": {
+    "title": "GeoJSON 解析器与查看器",
+    "subtitle": "上传您的 GeoJSON 文件以解析数据、可视化几何图形并准备表格集成。",
+    "uploadLabel": "上传 GeoJSON 或 JSON 文件",
+    "error": {
+      "title": "错误："
+    },
+    "status": {
+      "selectedFile": "已选择文件：{{fileName}} - 正在读取文件...",
+      "fileLoadedProcessing": "文件 {{fileName}} 已加载 - 正在处理 GeoJSON 数据..."
+    },
+    "fieldAnalysis": {
+      "title": "字段分析与命名",
+      "description": "检查推断的数据类型并为输出表中的字段名称设置别名。",
+      "table": {
+        "originalName": "原始字段名称",
+        "inferredType": "推断数据类型",
+        "fieldAlias": "字段别名 (用于输出表)",
+        "aliasPlaceholder": "输入别名"
+      }
+    },
+    "feishu": {
+      "defaultTableName": "GeoJSON 导入数据",
+      "exportTitle": "导出到飞书多维表格",
+      "tableNameLabel": "飞书中的新表名：",
+      "tableNamePlaceholder": "输入飞书表名",
+      "buttonCreating": "正在创建表格...",
+      "buttonCreate": "在飞书中创建表格并添加记录",
+      "statusProcessing": "正在处理您的飞书请求... 请稍候。",
+      "errorPrefix": "飞书错误："
+    },
+    "processedFeatures": {
+      "title": "已处理要素数据",
+      "table": {
+        "id": "ID",
+        "geometry": "几何图形"
+      }
+    },
+    "modal": {
+      "defaultTitle": "要素几何图形",
+      "titleWithId": "要素 ID: {{id}}",
+      "clickViewLarger": "点击查看大图"
+    }
+  },
+  "feishu": {
+    "error": {
+      "noDataOrTableName": "没有可上传的数据或表名为空。",
+      "failedToCreateTableNoId": "创建表格失败：未返回 tableId。",
+      "stringifyError": "错误：无法序列化对象",
+      "generalError": "错误：{{message}}",
+      "unknownError": "发生未知错误。"
+    },
+    "success": {
+      "tableCreatedFetchingIds": "表格 '{{tableName}}' (ID: {{tableId}}) 已创建。正在获取字段 ID...",
+      "fieldIdsMapped": "表格 '{{tableName}}' 字段 ID 已映射。正在准备记录...",
+      "tableCreatedAndRecordsAdded": "表格 '{{tableName}}' 已创建并成功添加 {{count}} 条记录！",
+      "tableCreatedNoRecords": "表格 '{{tableName}}' 已创建，但没有准备或添加记录。"
+    }
+  },
+  "modal": {
+    "geometryPreview": {
+      "title": "几何图形预览",
+      "aria": {
+        "close": "关闭弹窗"
+      },
+      "noGeometry": "没有可显示的几何图形。",
+      "button": {
+        "close": "关闭"
+      }
+    }
+  }
 }

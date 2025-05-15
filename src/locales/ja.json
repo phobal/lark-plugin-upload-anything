@@ -1,3 +1,73 @@
 {
-  "home.title": "Lark プラグインテンプレート"
+  "home": {
+    "title": "GeoJSON パーサー＆ビューア",
+    "subtitle": "GeoJSON ファイルをアップロードしてデータを解析し、ジオメトリを視覚化し、テーブル統合の準備をします。",
+    "uploadLabel": "GeoJSON または JSON ファイルをアップロード",
+    "error": {
+      "title": "エラー："
+    },
+    "status": {
+      "selectedFile": "選択されたファイル：{{fileName}} - ファイルを読み込み中...",
+      "fileLoadedProcessing": "ファイル {{fileName}} がロードされました - GeoJSON データを処理中..."
+    },
+    "fieldAnalysis": {
+      "title": "フィールド分析と命名",
+      "description": "推測されたデータ型を確認し、出力テーブルで使用するフィールド名のエイリアスを設定します。",
+      "table": {
+        "originalName": "元のフィールド名",
+        "inferredType": "推測データ型",
+        "fieldAlias": "フィールドエイリアス（出力テーブル用）",
+        "aliasPlaceholder": "エイリアスを入力"
+      }
+    },
+    "feishu": {
+      "defaultTableName": "GeoJSON インポート済みデータ",
+      "exportTitle": "Feishu Base にエクスポート",
+      "tableNameLabel": "Feishu の新しいテーブル名：",
+      "tableNamePlaceholder": "Feishu のテーブル名を入力",
+      "buttonCreating": "テーブルを作成中...",
+      "buttonCreate": "Feishu でテーブルを作成してレコードを追加",
+      "statusProcessing": "Feishu Base へのリクエストを処理中... しばらくお待ちください。",
+      "errorPrefix": "Feishu エラー："
+    },
+    "processedFeatures": {
+      "title": "処理済みフィーチャデータ",
+      "table": {
+        "id": "ID",
+        "geometry": "ジオメトリ"
+      }
+    },
+    "modal": {
+      "defaultTitle": "フィーチャジオメトリ",
+      "titleWithId": "フィーチャ ID: {{id}}",
+      "clickViewLarger": "クリックして拡大表示"
+    }
+  },
+  "feishu": {
+    "error": {
+      "noDataOrTableName": "アップロードするデータがないか、テーブル名が空です。",
+      "failedToCreateTableNoId": "テーブルの作成に失敗しました：tableId が返されませんでした。",
+      "stringifyError": "エラー：オブジェクトを文字列にできませんでした",
+      "generalError": "エラー：{{message}}",
+      "unknownError": "不明なエラーが発生しました。"
+    },
+    "success": {
+      "tableCreatedFetchingIds": "テーブル '{{tableName}}' (ID: {{tableId}}) が作成されました。フィールド ID を取得中...",
+      "fieldIdsMapped": "テーブル '{{tableName}}' のフィールド ID がマッピングされました。レコードを準備中...",
+      "tableCreatedAndRecordsAdded": "テーブル '{{tableName}}' が作成され、{{count}} 件のレコードが正常に追加されました！",
+      "tableCreatedNoRecords": "テーブル '{{tableName}}' は作成されましたが、準備または追加されたレコードはありません。"
+    }
+  },
+  "modal": {
+    "geometryPreview": {
+      "title": "ジオメトリプレビュー",
+      "aria": {
+        "close": "モーダルを閉じる"
+      },
+      "noGeometry": "表示するジオメトリがありません。",
+      "button": {
+        "close": "閉じる"
+      }
+    }
+  }
 }

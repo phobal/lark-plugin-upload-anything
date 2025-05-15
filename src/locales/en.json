@@ -1,3 +1,73 @@
 {
-  "home.title": "Lark Plugin Template"
+  "home": {
+    "title": "GeoJSON Parser & Viewer",
+    "subtitle": "Upload your GeoJSON files to parse data, visualize geometries, and prepare for table integration.",
+    "uploadLabel": "Upload GeoJSON or JSON file",
+    "error": {
+      "title": "Error:"
+    },
+    "status": {
+      "selectedFile": "Selected file: {{fileName}} - Reading file...",
+      "fileLoadedProcessing": "File {{fileName}} loaded - Processing GeoJSON data..."
+    },
+    "fieldAnalysis": {
+      "title": "Field Analysis & Naming",
+      "description": "Review inferred data types and set aliases for field names to be used in the output table.",
+      "table": {
+        "originalName": "Original Field Name",
+        "inferredType": "Inferred Data Type",
+        "fieldAlias": "Field Alias (for output table)",
+        "aliasPlaceholder": "Enter alias"
+      }
+    },
+    "feishu": {
+      "defaultTableName": "GeoJSON Imported Data",
+      "exportTitle": "Export to Feishu Base",
+      "tableNameLabel": "New Table Name in Feishu:",
+      "tableNamePlaceholder": "Enter table name for Feishu",
+      "buttonCreating": "Creating Table...",
+      "buttonCreate": "Create Table & Add Records in Feishu",
+      "statusProcessing": "Processing your request to Feishu Base... Please wait.",
+      "errorPrefix": "Feishu Error:"
+    },
+    "processedFeatures": {
+      "title": "Processed Features Data",
+      "table": {
+        "id": "ID",
+        "geometry": "Geometry"
+      }
+    },
+    "modal": {
+      "defaultTitle": "Feature Geometry",
+      "titleWithId": "Feature ID: {{id}}",
+      "clickViewLarger": "Click to view larger"
+    }
+  },
+  "feishu": {
+    "error": {
+      "noDataOrTableName": "No data to upload or table name is empty.",
+      "failedToCreateTableNoId": "Failed to create table: No tableId returned.",
+      "stringifyError": "Error: Could not stringify object",
+      "generalError": "Error: {{message}}",
+      "unknownError": "An unknown error occurred."
+    },
+    "success": {
+      "tableCreatedFetchingIds": "Table '{{tableName}}' (ID: {{tableId}}) created. Fetching field IDs...",
+      "fieldIdsMapped": "Table '{{tableName}}' field IDs mapped. Preparing records...",
+      "tableCreatedAndRecordsAdded": "Table '{{tableName}}' created and {{count}} records added successfully!",
+      "tableCreatedNoRecords": "Table '{{tableName}}' created, but no records were prepared or added."
+    }
+  },
+  "modal": {
+    "geometryPreview": {
+      "title": "Geometry Preview",
+      "aria": {
+        "close": "Close modal"
+      },
+      "noGeometry": "No geometry to display.",
+      "button": {
+        "close": "Close"
+      }
+    }
+  }
 }
